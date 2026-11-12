@@ -28,8 +28,23 @@ jobs:
 
       - name: Conferir que nenhum arquivo sensível foi versionado
         run: |
-          if git ls-files | grep -Ei '(^|/)(\.env($|\.)|.*\.(pem|key|p12|pfx)$|credentials\.json|.*\.log$)'; then
-            echo "::error::Arquivo sensivel encontrado no repositorio."
+          set -euo pipefail
+          # Padrões de arquivo sensível (o modelo .env.example é permitido)
+          SENSITIVE_RE='(^|/)(\.env$|\.env\.[^/]+$|.*\.(pem|key|p12|pfx|keystore)$|credentials\.json$|secrets\.json$|.*\.log$)'
+          FOUND="$(git ls-files | grep -Ei "$SENSITIVE_RE" | grep -vEi '(^|/)\.env\.example$' || true)"
+
+          if [ -n "$FOUND" ]; then
+            echo "::error::Arquivo sensivel encontrado no repositorio:"
+            echo "$FOUND"
             exit 1
           fi
+
+          # Nenhum arquivo versionado pode estar coberto pelo .gitignore
+          IGNORED="$(git ls-files -i -c --exclude-standard || true)"
+          if [ -n "$IGNORED" ]; then
+            echo "::error::Arquivo versionado que deveria estar no .gitignore:"
+            echo "$IGNORED"
+            exit 1
+          fi
+
           echo "Nenhum arquivo sensivel versionado."
