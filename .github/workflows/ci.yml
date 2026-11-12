@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar-site:
+    name: Validar integridade do site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verificar assets, JSON-LD e semantica
+        run: node scripts/check-assets.mjs
+
+      - name: Conferir que nenhum arquivo sensível foi versionado
+        run: |
+          if git ls-files | grep -Ei '(^|/)(\.env($|\.)|.*\.(pem|key|p12|pfx)$|credentials\.json|.*\.log$)'; then
+            echo "::error::Arquivo sensivel encontrado no repositorio."
+            exit 1
+          fi
+          echo "Nenhum arquivo sensivel versionado."
