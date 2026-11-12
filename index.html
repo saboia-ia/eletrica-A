@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Eletrica A 24h | Eletricista Residencial em São Paulo</title>
+  <meta name="description" content="Eletricista residencial 24h em São Paulo. Emergências elétricas, chuveiro, tomadas, iluminação e ventilador de teto. Atendimento nas zonas Norte, Sul, Leste e Oeste. Chame no WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#daa520">
+  <meta name="application-name" content="Eletrica A">
+  <link rel="canonical" href="https://eletricaa.com.br/">
+  <link rel="icon" type="image/png" href="logo-eletrica-a.png">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Eletrica A">
+  <meta property="og:url" content="https://eletricaa.com.br/">
+  <meta property="og:title" content="Eletrica A 24h | Emergências Elétricas em São Paulo">
+  <meta property="og:description" content="Eletricista residencial 24h para emergências, chuveiro, tomadas, iluminação e ventilador de teto. Atendimento nas zonas Norte, Sul, Leste e Oeste.">
+  <meta property="og:image" content="https://eletricaa.com.br/wa_images/sos%20eletricista.png">
+  <meta property="og:image:alt" content="Logo Eletrica A — Eletricista 24 horas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eletrica A 24h | Emergências Elétricas em São Paulo">
+  <meta name="twitter:description" content="Eletricista residencial 24h para emergências, chuveiro, tomadas, iluminação e ventilador de teto. Atendimento nas zonas Norte, Sul, Leste e Oeste.">
+  <meta name="twitter:image" content="https://eletricaa.com.br/wa_images/sos%20eletricista.png">
+
+  <!-- Imagem de fundo do hero (acima da dobra) -->
+  <link rel="preload" as="image" href="hero-bg.webp" fetchpriority="high">
+
+  <!-- Define o tema antes da primeira pintura para evitar "flash" -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('eletrica-theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.setAttribute('data-theme', saved || (prefersLight ? 'light' : 'dark'));
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#070a0f',
+            night: '#0b1017',
+            panel: '#111823',
+            gold: { DEFAULT: '#daa520', light: '#f0c64f', dark: '#a87b0f' }
+          },
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+          },
+          maxWidth: { content: '1180px' },
+          boxShadow: { gold: '0 10px 40px -10px rgba(218, 165, 32, .45)' }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+
+  <!-- Schema.org — apenas dados reais do negócio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Eletrica A",
+    "alternateName": "Eletrica A | Eletricista 24 Horas",
+    "url": "https://eletricaa.com.br/",
+    "logo": "https://eletricaa.com.br/wa_images/eletrica_a_144.png",
+    "image": "https://eletricaa.com.br/wa_images/sos%20eletricista.png",
+    "description": "Eletricista residencial 24 horas em São Paulo para emergências elétricas, chuveiro, tomadas e interruptores, iluminação, ventilador de teto e tubulações. Atendimento em casas e apartamentos nas zonas Norte, Sul, Leste e Oeste. Após o horário comercial, atendimento restrito ao WhatsApp.",
+    "telephone": "+55-11-98884-0073",
+    "email": "eletrica@eletricaa.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Zona Norte — São Paulo" },
+      { "@type": "AdministrativeArea", "name": "Zona Sul — São Paulo" },
+      { "@type": "AdministrativeArea", "name": "Zona Leste — São Paulo" },
+      { "@type": "AdministrativeArea", "name": "Zona Oeste — São Paulo" }
+    ],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "paymentAccepted": "Cartão de débito, Cartão de crédito em até 3x sem juros",
+    "currenciesAccepted": "BRL",
+    "sameAs": ["https://t.me/EletricaA"],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+55-11-98884-0073",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+55-11-4641-1323",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços elétricos residenciais",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergências elétricas 24h" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chuveiro elétrico: instalação, conserto e troca de resistência" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tomadas e interruptores: instalação, troca e conversão 127V/220V" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Iluminação: luminárias, lustres, spots e refletores" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ventilador de teto: conserto, montagem e fixação" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação de tubulações e canaletas para fiação" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-ink font-sans text-slate-100 antialiased">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ===== Sprite de ícones SVG inline ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13l0-8Z"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor">
+      <path d="m12 2.5 2.94 5.95 6.56.95-4.75 4.63 1.12 6.54L12 17.48l-5.87 3.09 1.12-6.54L2.5 9.4l6.56-.95L12 2.5Z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6 9 17l-5-5"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.05-.52-.099-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.91 3.79 20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.54-1.12.54l.4-5.66 10.32-9.33c.45-.4-.1-.62-.7-.22L7.47 13.17 1.9 11.4c-1.21-.38-1.24-1.21.26-1.79L22.4 2.13c1.01-.37 1.9.23 1.5 1.66Z"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m2 7 10 6L22 7"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+      <circle cx="12" cy="10" r="2.6"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v5l3.5 2"/>
+    </symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+      <path d="M2 10h20M6 15h4"/>
+    </symbol>
+    <symbol id="i-shower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m4 4 2.5 2.5"/>
+      <path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/>
+      <path d="M15 5 5 15"/>
+      <path d="M14 17v.01M10 16v.01M13 13v.01M16 10v.01M11 20v.01M17 14v.01M20 11v.01"/>
+    </symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0V8ZM12 17v5"/>
+    </symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z"/>
+    </symbol>
+    <symbol id="i-fan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="1.6"/>
+      <path d="M12 10.4c0-3.8 1.4-6.4 4.3-6.4 2.9 0 3.7 3.5 1.2 5.6-1.4 1.2-3.4 1.3-5.5.8Z"/>
+      <path d="M12 10.4c0-3.8 1.4-6.4 4.3-6.4 2.9 0 3.7 3.5 1.2 5.6-1.4 1.2-3.4 1.3-5.5.8Z" transform="rotate(120 12 12)"/>
+      <path d="M12 10.4c0-3.8 1.4-6.4 4.3-6.4 2.9 0 3.7 3.5 1.2 5.6-1.4 1.2-3.4 1.3-5.5.8Z" transform="rotate(240 12 12)"/>
+    </symbol>
+    <symbol id="i-conduit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21v-6a4 4 0 0 1 4-4h5V4h9"/>
+      <path d="m17 1 4 3-4 3"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+      <path d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+    </symbol>
+  </svg>
+
+  <!-- ===== Header fixo ===== -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex h-[72px] max-w-content items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex shrink-0 items-center gap-3 rounded-lg" aria-label="Eletrica A — voltar ao início">
+        <span class="logo-chip">
+          <img src="sos-eletricista.png" width="274" height="258" alt="Logo Eletrica A — Eletricista 24 horas" decoding="async">
+        </span>
+        <span class="hidden leading-tight sm:block">
+          <span class="block text-[17px] font-extrabold tracking-tight text-white">Eletrica A</span>
+          <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-gold">Eletricista 24 horas</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
+        <a href="#servicos" class="nav-link" data-nav>Serviços</a>
+        <a href="#como-funciona" class="nav-link" data-nav>Como funciona</a>
+        <a href="#avaliacoes" class="nav-link" data-nav>Avaliações</a>
+        <a href="#faq" class="nav-link" data-nav>FAQ</a>
+        <a href="#contato" class="nav-link" data-nav>Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="btn btn-gold hidden !px-4 !py-2.5 text-sm sm:inline-flex">
+          <svg class="h-[18px] w-[18px]" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Ativar modo claro" title="Ativar modo claro">
+          <svg class="theme-icon theme-icon-sun h-5 w-5" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="theme-icon theme-icon-moon h-5 w-5" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button id="menu-toggle" class="menu-toggle lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu lg:hidden" hidden>
+      <nav class="mx-auto max-w-content px-4 pb-5 pt-2 sm:px-6" aria-label="Menu mobile">
+        <a href="#servicos" class="mobile-link" data-nav>Serviços</a>
+        <a href="#como-funciona" class="mobile-link" data-nav>Como funciona</a>
+        <a href="#avaliacoes" class="mobile-link" data-nav>Avaliações</a>
+        <a href="#faq" class="mobile-link" data-nav>FAQ</a>
+        <a href="#contato" class="mobile-link" data-nav>Contato</a>
+        <div class="mt-4 grid gap-2">
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="btn btn-gold w-full">
+            <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a href="tel:+551146411323" class="btn btn-outline w-full">
+            <svg class="h-5 w-5" aria-hidden="true"><use href="#i-phone"/></svg>
+            (11) 4641-1323
+          </a>
+        </div>
+        <p class="mt-3 text-center text-xs text-slate-400">Após o horário comercial, atendimento restrito ao WhatsApp.</p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="hero relative isolate flex min-h-[100svh] items-center overflow-hidden pt-[72px]">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <span class="bolt bolt-1" aria-hidden="true"></span>
+      <span class="bolt bolt-2" aria-hidden="true"></span>
+
+      <div class="relative z-10 mx-auto grid w-full max-w-content gap-12 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[1.12fr_.88fr] lg:items-center lg:px-8 lg:py-20">
+        <div class="hero-copy">
+          <p class="hero-anim eyebrow" style="--delay:60ms">Plantão 24h · atendimento residencial</p>
+
+          <h1 class="hero-anim hero-title" style="--delay:150ms">
+            Emergência elétrica?<br>
+            <span class="text-gold">A Eletrica A resolve.</span>
+          </h1>
+
+          <p class="hero-anim hero-sub" style="--delay:250ms">
+            Eletricista residencial 24h para falta de energia, curto-circuito, disjuntor desarmando, chuveiro, tomadas e iluminação. Atendemos casas e apartamentos nas zonas Norte, Sul, Leste e Oeste.
+          </p>
+
+          <div class="hero-anim hero-actions" style="--delay:350ms">
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="btn btn-gold text-base">
+              <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Chamar no WhatsApp
+            </a>
+            <a href="tel:+551146411323" class="btn btn-outline text-base">
+              <svg class="h-5 w-5" aria-hidden="true"><use href="#i-phone"/></svg>
+              Ligar (11) 4641-1323
+            </a>
+          </div>
+
+          <p class="hero-anim mt-4 flex items-start gap-2 text-xs leading-relaxed text-slate-400 sm:text-sm" style="--delay:430ms">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden="true"><use href="#i-clock"/></svg>
+            Após o horário comercial, atendimento restrito ao WhatsApp.
+          </p>
+
+          <ul class="hero-anim hero-seals" style="--delay:500ms">
+            <li class="seal">
+              <span class="seal-icon"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <span><strong>24 horas</strong><small>Todos os dias</small></span>
+            </li>
+            <li class="seal">
+              <span class="seal-icon"><svg aria-hidden="true"><use href="#i-card"/></svg></span>
+              <span><strong>Débito e crédito</strong><small>Em até 3x sem juros</small></span>
+            </li>
+            <li class="seal">
+              <span class="seal-icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><strong>Zonas N, S, L e O</strong><small>Casas e apartamentos</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="energy-ring"></div>
+          <div class="energy-core">
+            <svg class="h-14 w-14 text-gold"><use href="#i-bolt"/></svg>
+            <span class="mt-1 block text-5xl font-black tracking-tight text-white">24h</span>
+            <span class="mt-1 block text-[10px] font-bold uppercase tracking-[0.34em] text-slate-300">plantão</span>
+          </div>
+          <div class="float-chip chip-a">
+            <svg class="h-4 w-4 text-gold"><use href="#i-bolt"/></svg>
+            Falta de energia
+          </div>
+          <div class="float-chip chip-b">
+            <svg class="h-4 w-4 text-gold"><use href="#i-plug"/></svg>
+            Tomada em curto
+          </div>
+          <div class="float-chip chip-c">
+            <svg class="h-4 w-4 text-gold"><use href="#i-shower"/></svg>
+            Chuveiro elétrico
+          </div>
+        </div>
+      </div>
+
+      <a href="#servicos" class="scroll-cue" aria-label="Ir para a seção de serviços">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        <span class="scroll-cue-text">Ver serviços</span>
+      </a>
+    </section>
+
+    <!-- Faixa de confiança -->
+    <div class="trust-strip">
+      <ul class="mx-auto grid max-w-content grid-cols-2 gap-x-4 gap-y-3 px-4 py-4 sm:px-6 md:grid-cols-4 lg:px-8">
+        <li class="trust-item"><svg aria-hidden="true"><use href="#i-clock"/></svg><span><strong>Plantão 24h</strong>Emergências elétricas</span></li>
+        <li class="trust-item"><svg aria-hidden="true"><use href="#i-shield"/></svg><span><strong>Casas e apartamentos</strong>Atendimento residencial</span></li>
+        <li class="trust-item"><svg aria-hidden="true"><use href="#i-pin"/></svg><span><strong>Norte, Sul, Leste e Oeste</strong>Zonas atendidas</span></li>
+        <li class="trust-item"><svg aria-hidden="true"><use href="#i-card"/></svg><span><strong>Débito e crédito</strong>Até 3x sem juros</span></li>
+      </ul>
+    </div>
+
+    <!-- ===== Serviços ===== -->
+    <section id="servicos" class="section">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <div class="section-head reveal">
+          <p class="eyebrow">Serviços</p>
+          <h2 class="section-title">O que a Eletrica A resolve</h2>
+          <p class="section-sub">Da emergência à instalação planejada, cuidamos da parte elétrica da sua casa ou apartamento. Fale com a gente e receba orientação pelo WhatsApp.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Emergências -->
+          <article class="service-card service-card--featured reveal" style="--d:0">
+            <div class="flex items-start justify-between gap-3">
+              <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+              <span class="urgent-badge"><span class="pulse-dot" aria-hidden="true"></span> Urgente</span>
+            </div>
+            <h3 class="service-title">Emergências 24h</h3>
+            <p class="service-desc">Atendimento residencial 24h para identificar a falha e resolver o problema elétrico.</p>
+            <ul class="service-chips" aria-label="Problemas elétricos atendidos">
+              <li>Falta de energia</li>
+              <li>Curto-circuito</li>
+              <li>Disjuntor desarmando</li>
+              <li>Quadro em curto</li>
+              <li>Fiação danificada</li>
+              <li>Tomada em curto</li>
+              <li>Sobrecarga</li>
+              <li>Fuga de corrente</li>
+              <li>Interruptor danificado</li>
+              <li>Oscilações na luz</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20atendimento%20para%20uma%20emerg%C3%AAncia%20el%C3%A9trica." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Chuveiro -->
+          <article class="service-card reveal" style="--d:1">
+            <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-shower"/></svg></span>
+            <h3 class="service-title">Chuveiro elétrico</h3>
+            <p class="service-desc">Instalação, conserto e manutenção de chuveiros e torneiras elétricas.</p>
+            <ul class="service-chips" aria-label="Serviços de chuveiro elétrico">
+              <li>Instalação</li>
+              <li>Conserto</li>
+              <li>Troca de resistência</li>
+              <li>Troca de chuveiro</li>
+              <li>Torneira elétrica</li>
+            </ul>
+            <p class="service-note">Temos resistências disponíveis. Para confirmar o modelo, envie a foto do chuveiro pelo WhatsApp.</p>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20atendimento%20para%20chuveiro%20el%C3%A9trico." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Tomadas -->
+          <article class="service-card reveal" style="--d:2">
+            <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-plug"/></svg></span>
+            <h3 class="service-title">Tomadas e interruptores</h3>
+            <p class="service-desc">Novos pontos, troca de tomadas e interruptores e adequação ao padrão atual.</p>
+            <ul class="service-chips" aria-label="Serviços de tomadas e interruptores">
+              <li>Instalação e troca</li>
+              <li>Novos pontos</li>
+              <li>Padrão 10A e 20A</li>
+              <li>Conversão 127V/220V</li>
+            </ul>
+            <p class="service-note">Tomada 10A para uso geral e 20A para uso específico.</p>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20atendimento%20para%20tomadas%20e%20interruptores." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Iluminação -->
+          <article class="service-card reveal" style="--d:3">
+            <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+            <h3 class="service-title">Iluminação</h3>
+            <p class="service-desc">Do lustre ao refletor: instalação, manutenção e troca de componentes.</p>
+            <ul class="service-chips" aria-label="Serviços de iluminação">
+              <li>Luminárias e pendentes</li>
+              <li>Lustres e spots</li>
+              <li>Arandelas e refletores</li>
+              <li>Lâmpadas e reatores</li>
+              <li>Soquetes</li>
+              <li>Sensor de presença</li>
+              <li>Relé fotocélula</li>
+              <li>Lâmpadas LED</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20atendimento%20para%20ilumina%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Ventilador -->
+          <article class="service-card reveal" style="--d:4">
+            <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-fan"/></svg></span>
+            <h3 class="service-title">Ventilador de teto</h3>
+            <p class="service-desc">Conserto e montagem de ventiladores de teto, com fixação segura em laje.</p>
+            <ul class="service-chips" aria-label="Serviços de ventilador de teto">
+              <li>Conserto</li>
+              <li>Troca de capacitor</li>
+              <li>Módulo receptor</li>
+              <li>Chave cordinha</li>
+              <li>Fixação em laje</li>
+              <li>Controle remoto</li>
+              <li>Comando de parede</li>
+              <li>Todas as marcas</li>
+            </ul>
+            <p class="service-note">Montagem de todas as marcas, com garantia.</p>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20atendimento%20para%20ventilador%20de%20teto." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+
+          <!-- Tubulações -->
+          <article class="service-card reveal" style="--d:5">
+            <span class="icon-badge"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-conduit"/></svg></span>
+            <h3 class="service-title">Tubulações e canaletas</h3>
+            <p class="service-desc">Instalação de tubulações ou canaletas para a passagem de fiação.</p>
+            <ul class="service-chips" aria-label="Serviços de tubulações e canaletas">
+              <li>Tubulações</li>
+              <li>Canaletas</li>
+              <li>Passagem de fiação</li>
+            </ul>
+            <p class="service-note">Para reformas, novos pontos e organização da fiação.</p>
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073&amp;text=Ol%C3%A1%2C%20Eletrica%20A!%20Preciso%20de%20instala%C3%A7%C3%A3o%20de%20tubula%C3%A7%C3%A3o%20ou%20canaleta." target="_blank" rel="noopener noreferrer" class="service-link">
+              Chamar no WhatsApp <svg class="h-4 w-4" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Como funciona ===== -->
+    <section id="como-funciona" class="section section-alt">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2 class="section-title">Simples, direto e sem complicação</h2>
+          <p class="section-sub">Você fala com a Eletrica A, explica o que está acontecendo e combinamos o atendimento com você.</p>
+        </div>
+
+        <ol class="steps mt-10 grid gap-5 lg:grid-cols-3">
+          <li class="step-card reveal" style="--d:0">
+            <div class="flex items-center justify-between">
+              <span class="step-number" aria-hidden="true">01</span>
+              <span class="step-icon"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+            </div>
+            <h3 class="step-title">Chame no WhatsApp</h3>
+            <p class="step-text">Fale direto com a Eletrica A e conte o que está acontecendo. Durante o horário comercial, também é possível ligar para o telefone fixo.</p>
+          </li>
+
+          <li class="step-card reveal" style="--d:1">
+            <div class="flex items-center justify-between">
+              <span class="step-number" aria-hidden="true">02</span>
+              <span class="step-icon"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-shower"/></svg></span>
+            </div>
+            <h3 class="step-title">Descreva o problema</h3>
+            <p class="step-text">Envie detalhes e fotos do local. No caso do chuveiro, a foto ajuda a conferir a disponibilidade da resistência para o seu modelo.</p>
+          </li>
+
+          <li class="step-card reveal" style="--d:2">
+            <div class="flex items-center justify-between">
+              <span class="step-number" aria-hidden="true">03</span>
+              <span class="step-icon"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+            </div>
+            <h3 class="step-title">Receba o atendimento</h3>
+            <p class="step-text">Combinamos o atendimento com você. Também atendemos com hora marcada, com visita presencial, de dia ou à noite.</p>
+          </li>
+        </ol>
+
+        <div class="callout reveal" style="--d:3">
+          <span class="callout-icon"><svg class="h-7 w-7" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <div class="flex-1">
+            <h3 class="text-base font-extrabold text-white sm:text-lg">Atendimento 24 horas para emergências</h3>
+            <p class="mt-1 text-sm leading-relaxed text-slate-400">Fora do horário comercial, o contato é pelo WhatsApp. Também atendemos com hora marcada, dia e noite.</p>
+          </div>
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="btn btn-gold shrink-0">
+            <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <span class="hidden sm:inline">Chamar agora</span>
+            <span class="sm:hidden">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Prova social ===== -->
+    <section id="avaliacoes" class="section">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <div class="section-head reveal">
+          <p class="eyebrow">Avaliações</p>
+          <h2 class="section-title">Quem já chamou a Eletrica A</h2>
+          <p class="section-sub">Relatos de atendimentos residenciais: emergências, chuveiro, tomadas, iluminação e ventilador de teto.</p>
+        </div>
+
+        <!-- Avaliações fictícias: substituir por reais -->
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="review-card reveal" style="--d:0">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“O disjuntor desarmava toda noite. Expliquei pelo WhatsApp e recebi o atendimento sem complicação. Problema resolvido.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">CR</span>
+              <span><strong>Camila R.</strong><small>Zona Norte</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal" style="--d:1">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“Meu chuveiro parou de esquentar. Enviei a foto, confirmaram a resistência e fizeram a troca.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">MA</span>
+              <span><strong>Marcos A.</strong><small>Zona Sul</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal" style="--d:2">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“Troquei tomadas antigas e instalei novos pontos. Serviço bem explicado e local limpo.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">JP</span>
+              <span><strong>Juliana P.</strong><small>Zona Leste</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal" style="--d:3">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“Tive um curto-circuito na cozinha à noite. Consegui falar pelo WhatsApp e recebi orientação para o atendimento.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">RS</span>
+              <span><strong>Renato S.</strong><small>Zona Oeste</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal" style="--d:4">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“Instalação de lustre e spots na sala. Ficou exatamente como eu queria.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">PM</span>
+              <span><strong>Patrícia M.</strong><small>Zona Norte</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal" style="--d:5">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <blockquote class="review-text">“O ventilador de teto estava com a cordinha travada. Fizeram o conserto e voltou a funcionar.”</blockquote>
+            <figcaption class="review-author">
+              <span class="review-avatar" aria-hidden="true">AL</span>
+              <span><strong>André L.</strong><small>Zona Sul</small></span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="mt-6 text-xs text-slate-400">* Depoimentos ilustrativos, criados para esta demonstração.</p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section section-alt">
+      <div class="mx-auto grid max-w-content gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:gap-16 lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Dúvidas frequentes</h2>
+          <p class="section-sub">Informações sobre atendimento, regiões, pagamento e serviços. Se a sua dúvida não estiver aqui, chame no WhatsApp.</p>
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="btn btn-gold mt-6">
+            <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Tirar dúvida no WhatsApp
+          </a>
+          <div class="mt-8 flex items-start gap-3 rounded-xl border border-gold/20 bg-gold/[.06] p-4">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden="true"><use href="#i-clock"/></svg>
+            <p class="text-sm leading-relaxed text-slate-300">Atendimento 24h para emergências. Após o horário comercial, o contato é restrito ao WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="faq-list reveal" style="--d:1">
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-1" class="faq-trigger" aria-expanded="true" aria-controls="faq-panel-1">
+                <span>A Eletrica A atende 24 horas?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-1" class="faq-panel is-open" role="region" aria-labelledby="faq-btn-1" aria-hidden="false">
+              <div class="faq-panel-inner">
+                <p>Sim. O atendimento de emergências é 24h. Após o horário comercial, o atendimento fica restrito ao WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-2" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2">
+                <span>Quais regiões são atendidas?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Atendemos casas e apartamentos nas zonas Norte, Sul, Leste e Oeste.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-3" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3">
+                <span>Quais são as formas de pagamento?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Aceitamos cartões de débito e crédito, em até 3x sem juros.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-4" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4">
+                <span>Vocês têm resistência para chuveiro disponível?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Há resistências disponíveis. Para confirmar a do seu modelo, envie uma foto do chuveiro pelo WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-5" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5">
+                <span>Como funciona o atendimento fora do horário comercial?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-5" class="faq-panel" role="region" aria-labelledby="faq-btn-5" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Fora do horário comercial, o contato é exclusivamente pelo WhatsApp. Durante o horário comercial, também é possível ligar para o telefone fixo (11) 4641-1323.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-6" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-6">
+                <span>É possível agendar uma visita?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-6" class="faq-panel" role="region" aria-labelledby="faq-btn-6" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Sim. Atendemos com hora marcada, com visita presencial, de dia ou à noite.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-7" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-7">
+                <span>Vocês consertam ventilador de teto de qualquer marca?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-7" class="faq-panel" role="region" aria-labelledby="faq-btn-7" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Fazemos a montagem de todas as marcas, com garantia. Também realizamos conserto, troca de capacitor, módulo receptor, chave cordinha, controle remoto ou comando de parede, além da fixação em laje.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-8" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-8">
+                <span>O atendimento é para casas e apartamentos?</span>
+                <span class="faq-icon" aria-hidden="true"><svg class="h-4 w-4"><use href="#i-chevron"/></svg></span>
+              </button>
+            </h3>
+            <div id="faq-panel-8" class="faq-panel" role="region" aria-labelledby="faq-btn-8" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Sim. O atendimento é residencial, em casas e apartamentos, incluindo falta de energia, curto-circuito, disjuntor desarmando, tomada em curto e outros problemas elétricos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section id="contato" class="section">
+      <div class="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-start lg:gap-14">
+          <div class="reveal">
+            <p class="eyebrow">Contato</p>
+            <h2 class="section-title">Precisa de um eletricista agora?</h2>
+            <p class="section-sub">Fale com a Eletrica A pelo WhatsApp, ligue ou envie uma mensagem pelo formulário. Vamos entender o problema e orientar o atendimento.</p>
+
+            <div class="mt-8 grid gap-3">
+              <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--wa">
+                <span class="contact-icon"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+                <span class="min-w-0">
+                  <span class="contact-label">WhatsApp</span>
+                  <span class="contact-value">(11) 98884-0073</span>
+                  <span class="contact-meta">Atendimento 24h pelo WhatsApp</span>
+                </span>
+              </a>
+
+              <a href="tel:+551146411323" class="contact-card">
+                <span class="contact-icon"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <span class="min-w-0">
+                  <span class="contact-label">Telefone fixo</span>
+                  <span class="contact-value">(11) 4641-1323</span>
+                  <span class="contact-meta">Durante o horário comercial</span>
+                </span>
+              </a>
+
+              <a href="mailto:eletrica@eletricaa.com.br" class="contact-card">
+                <span class="contact-icon"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <span class="min-w-0">
+                  <span class="contact-label">E-mail</span>
+                  <span class="contact-value break-all">eletrica@eletricaa.com.br</span>
+                  <span class="contact-meta">Envie sua mensagem por e-mail</span>
+                </span>
+              </a>
+
+              <div class="contact-card">
+                <span class="contact-icon"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <span class="min-w-0">
+                  <span class="contact-label">Regiões atendidas</span>
+                  <span class="contact-value">Zonas Norte, Sul, Leste e Oeste</span>
+                  <span class="contact-meta">Casas e apartamentos</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card reveal" style="--d:1">
+            <h3 class="text-xl font-extrabold tracking-tight text-white">Envie sua mensagem</h3>
+            <p class="mt-1 text-sm text-slate-400">Preencha os campos e continue a conversa no WhatsApp.</p>
+
+            <form id="contact-form" class="mt-6" novalidate>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="nome" class="field-label">Nome completo <span class="text-gold" aria-hidden="true">*</span></label>
+                  <input id="nome" name="nome" type="text" class="field" autocomplete="name" placeholder="Como podemos chamar você?" required aria-required="true" aria-describedby="erro-nome">
+                  <p id="erro-nome" class="field-error"></p>
+                </div>
+
+                <div>
+                  <label for="telefone" class="field-label">Telefone / WhatsApp <span class="text-gold" aria-hidden="true">*</span></label>
+                  <input id="telefone" name="telefone" type="tel" class="field" autocomplete="tel" inputmode="tel" placeholder="(11) 98888-8888" required aria-required="true" aria-describedby="erro-telefone">
+                  <p id="erro-telefone" class="field-error"></p>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <label for="servico" class="field-label">Tipo de serviço <span class="text-gold" aria-hidden="true">*</span></label>
+                <select id="servico" name="servico" class="field field-select" required aria-required="true" aria-describedby="erro-servico">
+                  <option value="" selected disabled>Selecione o serviço</option>
+                  <option value="Emergência elétrica 24h">Emergência elétrica 24h</option>
+                  <option value="Chuveiro elétrico">Chuveiro elétrico</option>
+                  <option value="Tomadas e interruptores">Tomadas e interruptores</option>
+                  <option value="Iluminação">Iluminação</option>
+                  <option value="Ventilador de teto">Ventilador de teto</option>
+                  <option value="Tubulações e canaletas">Tubulações e canaletas</option>
+                </select>
+                <p id="erro-servico" class="field-error"></p>
+              </div>
+
+              <div class="mt-4">
+                <label for="mensagem" class="field-label">Mensagem <span class="text-gold" aria-hidden="true">*</span></label>
+                <textarea id="mensagem" name="mensagem" class="field min-h-[120px] resize-y" placeholder="Conte o que está acontecendo. Se for chuveiro, você pode enviar a foto depois pelo WhatsApp." required aria-required="true" aria-describedby="erro-mensagem"></textarea>
+                <p id="erro-mensagem" class="field-error"></p>
+              </div>
+
+              <div id="form-status" class="form-status mt-4" role="status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-gold mt-4 w-full">
+                <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                Enviar pelo WhatsApp
+              </button>
+
+              <p class="mt-3 text-center text-xs leading-relaxed text-slate-400">Ao enviar, o WhatsApp abrirá com a sua mensagem já preenchida.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="mx-auto max-w-content px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_.8fr_.9fr_1fr]">
+        <div>
+          <a href="#inicio" class="inline-flex items-center gap-3" aria-label="Eletrica A — voltar ao início">
+            <span class="logo-chip">
+              <img src="sos-eletricista.png" width="274" height="258" alt="Logo Eletrica A — Eletricista 24 horas" loading="lazy" decoding="async">
+            </span>
+            <span class="leading-tight">
+              <span class="block text-lg font-extrabold tracking-tight text-white">Eletrica A</span>
+              <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-gold">Eletricista 24 horas</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">Eletricista residencial 24 horas para emergências, reparos e instalações em casas e apartamentos nas zonas Norte, Sul, Leste e Oeste.</p>
+          <div class="mt-5 flex items-center gap-2">
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Falar com a Eletrica A no WhatsApp">
+              <svg class="h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            </a>
+            <a href="https://t.me/EletricaA" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Falar com a Eletrica A no Telegram">
+              <svg class="h-5 w-5" aria-hidden="true"><use href="#i-telegram"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Links do rodapé">
+          <h2 class="footer-heading">Navegue</h2>
+          <ul class="footer-links">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-heading">Serviços</h2>
+          <ul class="footer-links">
+            <li><a href="#servicos">Emergências 24h</a></li>
+            <li><a href="#servicos">Chuveiro elétrico</a></li>
+            <li><a href="#servicos">Tomadas e interruptores</a></li>
+            <li><a href="#servicos">Iluminação</a></li>
+            <li><a href="#servicos">Ventilador de teto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Contato</h2>
+          <ul class="footer-contact">
+            <li>
+              <svg aria-hidden="true"><use href="#i-phone"/></svg>
+              <a href="tel:+551146411323">(11) 4641-1323</a>
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer">(11) 98884-0073</a>
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-mail"/></svg>
+              <a href="mailto:eletrica@eletricaa.com.br" class="break-all">eletrica@eletricaa.com.br</a>
+            </li>
+          </ul>
+          <p class="mt-4 inline-flex items-center gap-2 rounded-lg border border-gold/20 bg-gold/[.06] px-3 py-2 text-xs text-slate-300">
+            <svg class="h-4 w-4 text-gold" aria-hidden="true"><use href="#i-card"/></svg>
+            Débito e crédito em até 3x sem juros
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col gap-3 border-t border-white/[.07] pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="current-year">2026</span> Eletrica A. Todos os direitos reservados.</p>
+        <p>Atendimento 24h · Após o horário comercial, somente WhatsApp.</p>
+      </div>
+    </div>
+
+    <!-- ===== WhatsApp flutuante ===== -->
+    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511988840073" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar com a Eletrica A no WhatsApp">
+      <svg class="h-7 w-7" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+      <span class="whatsapp-tooltip" aria-hidden="true">Fale com a Eletrica A</span>
+    </a>
+  </footer>
+</body>
+</html>
