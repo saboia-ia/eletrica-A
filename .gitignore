@@ -1,0 +1,100 @@
+# ==========================================================
+# Eletrica A — .gitignore
+# Site estático (HTML/CSS/JS). Nenhum arquivo de build é
+# versionado; o Tailwind é carregado via CDN.
+# ==========================================================
+
+# ---------- Segredos e variáveis de ambiente ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.keystore
+secrets.json
+secrets.*.json
+credentials.json
+.netrc
+.npmrc
+.pypirc
+
+# ---------- Logs ----------
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------- Dependências / builds ----------
+node_modules/
+bower_components/
+jspm_packages/
+.pnp
+.pnp.js
+vendor/
+.cache/
+tmp/
+temp/
+
+# Build de Tailwind/PostCSS ( caso o CDN seja substituído no futuro)
+dist/
+build/
+out/
+public/assets/
+*.css.map
+*.js.map
+
+# ---------- Testes e cobertura ----------
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+*.playwright.js
+screenshots/
+__screenshots__/
+.videos/
+
+# ---------- Ferramentas locais ----------
+.cache/
+.parcel-cache/
+.turbo/
+.nuxt/
+.next/
+.astro/
+.svelte-kit/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ---------- Sistema operacional ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---------- Servidores locais ----------
+*.local
+.env.local
+.env.*.local
+!.env.example
+
+# ---------- Dados temporários ----------
+*.bak
+*.orig
+*.swp
+*.swo
+*~

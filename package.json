@@ -1,0 +1,34 @@
+{
+  "name": "eletrica-a",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page de pagina unica da Eletrica A - Eletricista 24 Horas (HTML/CSS/JS + Tailwind via CDN)",
+  "homepage": "https://eletricaa.com.br/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saboia-ia/eletrica-A.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saboia-ia/eletrica-A/issues"
+  },
+  "author": "saboia-ia",
+  "license": "UNLICENSED",
+  "keywords": [
+    "eletrica-a",
+    "eletricista",
+    "landing-page",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "scripts": {
+    "dev": "npx --yes serve@14 . -l 8080",
+    "preview": "python -m http.server 8080",
+    "check": "node scripts/check-assets.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
